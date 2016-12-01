@@ -161,7 +161,7 @@ button.more {
 video { border-radius: 6px; }
 
 /* video container */
-.videoContainer{
+/*.videoContainer{
 	width:100%;
 	height:500px;
 	position:relative;
@@ -185,11 +185,12 @@ video { border-radius: 6px; }
 	z-index: 6;
 	border-radius: 6px;
 	pointer-events: none;
-}
+}*/
 
 /* video caption css */
 figure {
 	position: relative;
+	margin: 0 auto;
 }
 
 .caption {
@@ -208,9 +209,53 @@ figure {
     font-family: 'Pathway Gothic One', sans-serif;
 }
 
+.caption:hover {
+	display: block;
+}
+
 figure div.caption h2 {
     color: #ffffff;
     font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.video-controls-bar {
+    background-color: #000000;
+    padding: 10px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.video-controls-bar span {
+	color: #ffffff;
+}
+
+#seekSlider {
+	width: 50%;
+	margin: 0;
+	margin: 1% 0;
+}
+
+#volumeSlider {
+	width: 5%;
+	margin: 1% 0;
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: #666;
+	border:#666 1px solid;
+    height:4px;
+    border-radius: 10px;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #FFF;
+    height:15px;
+    width:15px;
+	border-radius:100%;
+	cursor:pointer;
 }
 
 /*.feat-vid-con {

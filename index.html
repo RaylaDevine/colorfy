@@ -40,18 +40,19 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-		  		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				    <span class="sr-only">Toggle navigation</span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-		  		</button>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
 		  		<div class="social">
 		  			<a href=""><div class="twitter"></div></a>
 		  			<a href=""><div class="fb"></div></a>
 		  		</div>
 			</div>
-			<div class="navbar-collapse collapse">
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="index.html">Home</a></li>
 					<li><a href="story.html">Lens</a></li>
@@ -73,27 +74,25 @@
     	<div class="container">
     		<div class="feat-vid-con">
 				<figure id="videoContainer">
-					<video id="video" controls preload="metadata" poster="assets/img/jazmin_story.jpg" width="100%">
+					<video id="feat-video" controls preload="metadata" poster="assets/img/jazmin_story.jpg" width="100%">
 						<source src="assets/vid/jazmin_video.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
 					</video>
 					<div class="caption">
 						<h2>Colorfy Focus: Jazmin Goodwin</h2>
 						<p>Short Documentary Produced by Bian E.</p>
 					</div>
 
-					<ul id="video-controls" class="controls">
-						<li><button id="playpause" type="button">Play/Pause</button></li>
-						<li><button id="stop" type="button">Stop</button></li>
-						<li class="progress">
-							<progress id="progress" value="0" min="0">
-								<span id="progress-bar"></span>
-							</progress>
-						</li>
-						<li><button id="mute" type="button">Mute/Unmute</button></li>
-						<li><button id="volinc" type="button">Vol+</button></li>
-						<li><button id="voldec" type="button">Vol-</button></li>
-						<li><button id="fs" type="button">Fullscreen</button></li>
-					</ul>
+					<!-- <div id="video-controls-bar" class="video-controls-bar">
+						<button id="playpausebtn" type="button">Play</button>
+						<input id="seekSlider" type="range" min="0" max="100" value="0" step="1">
+						<div class="time">
+							<span id="currentTimeText">00:00</span> / <span id="durationTimeText">00:00</span>
+						</div>
+						<button id="mutebtn" type="button">Mute</button>
+						<input id="volumeSlider" type="range" min="0" max="100" value="100" step="1">
+						<button id="fullscreenbtn">[ &nbsp; ]</button>
+					</div> -->
 				</figure>
 
     		<!-- <video class="feat-vid">
